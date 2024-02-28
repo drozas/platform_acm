@@ -1,0 +1,185 @@
+% !TEX root = 0_main.tex
+
+\section{Results}\label{sec:results}
+
+Next, we describe the series of problems regarding the current logic of task allocation and the main categories surrounding it, which emerged as key from our analysis: (1) first-come, first-served logic, (2) competitiveness, (3) constantly checking for work, and (4) inconsistent workload. Subsequently, we provide an overview of the three alternative models for task allocation identified in this study beyond FCFS.
+
+\subsection{Behind the First-Come, First-Served logic}
+\label{subsec:fcfs}
+
+The ``First-Come, First-Served'' logic embedded in the platform is the main component of task allocation in AOD. This logic creates a competitive dynamic between linguists to assign tasks to themselves. The following quote, from an interview with P\textsubscript{4}, depicts the competitive nature associated with FCFS logic:
+
+\begin{quote}
+``What I realised very fast is that the competition is absolutely awful, the competition is huge, you need to learn how to get the work.''
+\end{quote}
+
+The competitiveness embedded in this logic becomes even more problematic in a global environment, as in the case of AOD. For example, in theory all linguists belonging to the same language group should have the same opportunity to assign themselves a specific task. However, the reality is that some of them might be in time zones that are less convenient concerning the times in which the tasks are usually posted for assignation. Overall, FCFS encompasses a need for workers to check to find more work continuously, an issue identified also in other crowdsourcing projects \cite{gray2019ghost}. For instance,  P\textsubscript{4} explained:
+
+\begin{quote}
+``I learnt how to be fast and not sleep with my computer, but [to] wake up with my computer right next to me. There is also a difference in the time zones, [and] I think we are in the worst position. [...] It is competitive even just to grab it [a task]. I need at least 7 hours of sleep. [...] If you really want to get this work, you need to be next to your computer for hours.''
+\end{quote}
+
+Furthermore, this FCFS logic needs to be understood in an environment in which the workload is typically inconsistent for most of the language groups, as P\textsubscript{12} explains:
+
+\begin{quote}
+``Last year, we only had text work like one month, and the rest of the months we had really short videos, like one minute, two minutes, like an advertisement. So that was it: last year it was poor. But the year before, it was a very, very good year. [...] I would like to make a full wage out of Amara, but I don't have the chance. Maybe later on, if the organisation expands. Because it's cool that you can work from wherever you are, on your own timing.''
+\end{quote}
+
+Some linguists also suggested that the competitiveness embedded in the platform's task allocation method undermines the sense of community. P\textsubscript{7}, for example, explained it in the following way:
+
+\begin{quote}
+    ``In general, I believe we have a very neutral attitude towards each other because... yes, we share the language. But we are also competing to get the jobs [...]. Especially, in the last couple of years, due to the decline in job orders that I have won, I can tell you that it [competition] is growing.''
+\end{quote}
+
+As we introduce in Section \ref{sec:case-study}, one of the key changes implemented by AOD's core was to limit to ``one at a time'' the number of tasks that linguists can assign themselves simultaneously. This change in the logic was a counter-measure to avoid platform vandalism (e.g. it was found that some participants implemented computer scripts to assign themselves tasks as soon as they were published) and as a first attempt to distribute work more equally. Nevertheless, as we have seen, this has not been sufficient to avoid competition between linguists. FCFS is not the most efficient way in terms of productivity either, as the members of the core explained. P\textsubscript{17}, a core member of Amara and one of the key workers responsible for managing the overall organisational processes in AOD, explains the need to increase the throughput and reduce the time provided to linguists to fulfil deadlines:
+
+\begin{quote}
+    ``If I'm a linguist, the way it works now is: I'll get a caption [...] whether or not it takes me three days to finish the job, I know in advance it's doable in three days, so I can wait until day three to do it. So I can assign myself on day one and wait until day three and do it. From my perspective and my job [as a manager], I see that as a disadvantage for the company. Because, first of all, the client is going to get it later. [...] also, maybe there was another linguist that could've done it on day one. So, in a way, we do [work `on-demand'] [...], but not in a way in which Uber is on-demand. [...] And we don't have as many people.''
+\end{quote}
+
+
+Considering all of the problems discussed, we organised a co-designing workshop with AOD linguists that allowed us to incorporate their perspectives into the tools that mediate their day-to-day practices. Next, we discuss the three main models which emerged from this initiative.
+
+\subsection{Exploring and identifying alternative models for tasks allocation}
+\label{subsec:models}
+
+We identified three alternative models for task allocation beyond FCFS: (1) round-robin, (2) reputation-based, and (3) content-based.
+
+\subsubsection{Round-robin}
+
+Round-robin (RR) refers, in computer science, to an algorithm proposed in the context of operating systems \cite{silberschatz1999applied} to decide how to schedule multiple processes competing simultaneously for CPU time. In RR, computational processes are assigned similar amounts of computing time circularly. It is one of the simplest and most straightforward solutions to avoid \textit{starvation} in-process execution and it is known as one of the fairest scheduling algorithms \cite{tanenbaum2015modern}.
+
+Within the context of the focus group, a parallel with RR emerged when discussing the need to split the work equally between linguists, as P\textsubscript{28} suggested:
+
+\begin{quote}
+    ``What I was thinking was a way that all translators could, uh, work on tasks on Amara so that we could split the work equally between translators so that there would be a similar monthly workload for everyone.''
+\end{quote}
+
+Rather than in the form of a ``pure RR'', the model was discussed as a starting point that could be customised according to the context to find alternatives in which a more balanced assignation of tasks is achieved. A key aspect related to this model was the ``pre-assignation of tasks'', as depicted by the following excerpt in which participants P\textsubscript{27} and P\textsubscript{28} intervene:
+
+\begin{quote}
+    ``P\textsubscript{27}: I was thinking about... about (sic) her idea of pre-assignment. Like, (sic) every day the linguists would come, and we'd have their inbox, uh, the tasks for that day. [...] it could be that on a certain day, uh, we wouldn't have the time needed for that particular task. So it would be necessary to consider, uh, something like the option to accept or not that particular task. [...] 
+    
+    P\textsubscript{28}: [...] So the translator could be contacted like, uh, they will be given 24 business hours to respond and take a task [...] And the priority would be for someone who's behind this monthly workload. [...]''
+\end{quote}
+
+The main advantage discussed by the linguists regarding this model is that it tackles the competitive character discussed in section \ref{subsec:fcfs}, as P\textsubscript{28} explained: 
+\begin{quote}
+    ``I really liked P\textsubscript{26}'s idea of the pre-assignment of tasks because this takes away the competitiveness aspect of task allocation. [...] This could also be integrated [...] with a spreadsheet that would rank: this translator has worked on this many minutes this month. So the priority would be for a translator who has not worked that many minutes. So that we could, um, reach a fair amount of work for everyone.''
+\end{quote}
+
+Indeed, we found that some linguists in Amara already use similar informal practices in their day-to-day operating. While most tasks related to translating and captioning are allocated in AOD following a FCFS logic, reviewing (another type of task) escapes this logic in some cases. This alternative allocation occurs particularly for active projects in which clients often request special instructions. These reviewing tasks are carried out by linguists with more experience and selected by Project Managers. This special role in AOD is known as Designated Quality Assurer (DQA\footnote{As discussed in Section \ref{sec:methods}, DQAs are exclusively responsible for the whole reviewing process for large projects. This contrasts with the usual workflow, in which multiple AOD members review videos within a project following a FCFS logic.}). As the quote by P\textsubscript{28} below depicts, within this specific scope, linguists themselves employ a similar RR logic to balance the workload between themselves:
+
+\begin{quote}
+    ``I thought about this because [working as a DQA] I developed a spreadsheet that would sum up all the videos that were available for us to work on, uh, so that we could know which video to allocate to whom like, uh, there's a new video. So if \textit{Emma} was about, I don't know, 20 minutes, uh, shorter than I was, then the video would be given to her. And then the next one would be given to me. And we would find a balance between this workload.''
+\end{quote}
+
+As we shall discuss in Section \ref{sec:discussion}, the challenge of this model lies in identifying the specific parameters to encode in these forms of RR allocation and in providing the linguists with mechanisms that enable them to reach consensus among themselves. Furthermore, the parameters of this model could be combined with those from other models, such as the reputation-based system (presented next). Reflecting on these issues, P\textsubscript{27} and P\textsubscript{30} explained:
+
+\begin{quote}
+    ``P\textsubscript{27}: [...] there isn’t always a new video to work on. So I think the second part we might have to work on, uh, and I think this could also tie in with my suggestion to split the work equally. So based on the, um, background and the ratings of, uh, translators, they would be pre-assigned to new tasks.[...]  
+    
+    P\textsubscript{30}: [...] I think attention to deadline is important, and it doesn't matter if you send like a spreadsheet, tell me how many hours, can you work [referring to the calendar idea]. They put like a thousand hours, and then in the day-by-day, you see that they can't, uh, comply to that.''
+\end{quote}
+
+Next, we discuss the model of allocation by reputation to which the linguists refer.
+
+\subsubsection{Reputation-based}
+\label{subsec:reputation-model}
+Reputation systems have been proposed to build trust among Internet users. They are based on collected and aggregated feedback about users' past feedback and help to foster trustworthy behaviours, assess credibility, and discourage dishonest participation \cite{resnick2000reputation}. Usually in crowdsourcing platforms, e-commerce websites, and Q\&A forums, feedback on users' actions is instrumented through textual comments, numerical rating scores such as one-to-five scales, and boolean evaluations (e.g., yes/no, like/dislike) \cite{resnick2006value}. Once built, users' reputation is represented as badges, stars, points, or average scores attached to their screen names \cite{papoutsoglou2020modeling, willems2019reputation, kraut2012building}. 
+
+In the context of AOD, this category emerged as a model in which tasks are offered to linguists according to the quality of their previous work, based on feedback received by their peers, and depending on the characteristics of the tasks themselves. During the workshop, this model emerged as a \textit{points system}. P\textsubscript{27}, for example, proposed the following idea for a model:
+
+\begin{quote}
+   ``[...] a system that would be able to rank productivity of linguists [...], something like a points system in which the points would be earned, um, with reference to the volume that was processed before, and also based on the quality of previous work [...]''
+
+\end{quote}
+
+%\begin{quote}
+ %  ``[...]a system that would be able to rank productivity of linguists [...], something like a points system in which the points would be earned, um, with reference to the volume that was processed before, and also based on the quality of previous work, [...] and for the sake of transparency, then we could use something like a ranking board where we could see who is doing better, who is who, what needs improvement in the points system [...]''
+%\end{quote}
+
+The main problem tackled by this model, according to the linguists, is that it would help to increase the level of transparency within AOD. Currently, in AOD, several levels operate according to the linguist's experience. The transition between these levels, however, currently lacks clarity and explicit mechanisms, as several linguists pointed out. The following excerpt, from an interview with P\textsubscript{2}, illustrates this:
+
+\begin{quote}
+    `` [...] About the transition in levels. Translators should know how to reach next levels from the current levels. What's the criteria for that? [...] [we need] transparency on how to move up or just [some] guidelines.''
+\end{quote}
+
+Indeed, as with the previous case of informal practices in RR, the transition between the different levels already operates, although it does so without explicit parameters, as P\textsubscript{30} explained:
+
+\begin{quote}
+    `` [...] We had knowledge of the previous work that was done by certain linguists that had displayed more quality, more commitment. Uh, they have processed more volume. So [they are promoted] based on all this, but [it was] not, not (sic) quantified, so it was more like a qualitative selection.''
+\end{quote}
+
+The challenge of a reputation-based model, as that proposed by the linguists, is arriving at agreements on what to consider within the system. However, within the focus group, linguists found a preliminary consensus regarding its application in the context of the current \textit{AOD levels system}. The system proposed was based on tiers, as the excerpt below by P\textsubscript{28} illustrates:
+
+\begin{quote}
+    `` [...] building a tier system based on the [amount of] minutes of videos that translators have worked on. So, um, that could be, for example, three tiers: novice, intermediate, and veteran. So the novice [translators]  would get shorter non-technical videos, and veteran translators would be given the opportunity to work on longer technical videos. And the intermediate [level] would be a balance between the two.[...]''
+\end{quote}
+
+The number of possibilities is such that we concluded that specific sessions would be required to fully explore the parameters of this reputation-based model. However, we identified two key characteristics to be incorporated into the design. Firstly, linguists agreed on not only including the final quality of the translation into the system through reviews made by their peers, but the system should also consider if deadlines were met and how well the changes suggested by the reviewer were implemented. The following excerpt by P\textsubscript{30}, illustrates this:
+
+\begin{quote}
+   ``[...] I just wanted to add that not only the quality of work should be considered in the scoring system, but also the attention to the deadline. In the past, we had a lot of problems with translators that were good, but they were terrible with deadlines. That actually made us lose some clients.[...]''
+\end{quote}
+
+Secondly, the system should promote inclusiveness. For example, linguists expressed their concerns regarding the possible barriers which a reputation-based model could generate. The following quote, from a comment by P\textsubscript{28}, illustrates this concern with regards to the barriers for newcomers:
+
+\begin{quote}
+   ``[...] My only worry is that we should be careful not to exclude newcomers. Uh, for example, if, if (sic) a new person received the low rating, uh, we need to ensure this doesn't compromise how much work they get, because this could be, this could turn into a vicious, vicious (sic) circle as the ones who need to practice the most would not be given enough work to improve on. Uh, so  we need to be careful about that. [...]''
+\end{quote}
+
+Furthermore, linguists envisioned and proposed ways to tackle such challenges in a reputation-based model. For example, they suggested that linguists' degree of experience should be considered to facilitate the allocation of simpler tasks to newcomers to tackle this type of barrier. Other proposals suggested considering a fixed number of recent tasks carried out:
+
+\begin{quote}
+    ``P\textsubscript{30}: [...] So for the newcomers, we should give them shorter videos and simpler subjects. And for the expert translators, the larger videos, longer videos and high profile projects, and high profile clients. [...] 
+    
+    P\textsubscript{28}: [...] I also thought about rating based on a fixed number of tasks. Like the five or ten latest videos would be taken into account in this rating system, so that upon working on new projects, your ranking could also improve like so that you don't get affected by the first videos. [...]''
+\end{quote}
+
+%-----
+%TO-KEEP: Perhaps to be used in future versions
+%Such system could be combined with the aforementioned characteristics, as PX explained:
+
+%\begin{quote}
+   % `` [...] Just reacting to what {Participant 6} was, uh, was saying like, um, the point system could be something like that goes up and down, like, like, (sic) and also like it would be compatible with, with (sic) {Participant 4} idea of, of tiers. Like, like, (sic) um, if you miss a deadline, you lose a point. If you, like, if you promise to take more volume than what you can actually process, you lose a point and then there´s always the risk of going back one tier and then having access to less content. That would be also a motivator.''
+%\end{quote}
+%-----
+
+
+In sum, a model based on reputation would help to tackle the need to constantly check for work and increase the degree of transparency of promotions within the platform. However, the model poses a myriad of challenges regarding inclusiveness or the generation of different, and perhaps more challenging, forms of competitiveness. As the previous excerpt illustrates, the model could not be purely based on reputation. It could instead be combined with content-based assignation characteristics, which could help tackle some of these challenges. The next section explores precisely this in our third model: content-based allocation.
+
+\subsubsection{Content-based}
+Recommendation systems are the cornerstones of modern online services. In social media, they are used to suggest publications \cite{menk2019recommendation}, in e-commerce sites to offer products \cite{li2015online}, in video-streaming applications to recommend multimedia materials \cite{davidson2010youtube}, and in crowdsourcing platforms to suggest tasks to workers, as we saw in Section \ref{sec:related_works}. Content-based is one of the most widely used techniques employed in recommendation systems. It focuses on matching the characteristics of the artefact to recommend (e.g., topic of publication, movie genre or task description) with attributes of users based on their profiles and historical data \cite{isinkaye2015recommendation}. 
+
+For our case study, this model emerged as one in which tasks are pre-assigned according to two different types of possible matching logics: (1) either the linguist's skills and/or personal preferences regarding specific areas of knowledge, and (2) the linguist's previous experience in the platform concerning the complexity and/or size of the task.
+
+The former initially emerged from discussions on how to ensure the quality of translations, as the following excerpt by P\textsubscript{26} depicts:
+\begin{quote}
+    ``[...] if people work based on their backgrounds, they're much more used to [the] terminology and that, in the end, increases the quality.''
+    %in the, in the end. I think that´s a pretty good idea. And, but yeah, this, if I think about, uh, Amara’s, no? The way the Amara works and so how this could be done, no. So how the, how this work could be allocated because besides technical work there is, we do a lot of, uh, not a lot, but some movies and other things, no. So how this other work that´s not technical in the specifics would be allocated also is something I think we would have to think about it in the end, but I don´t know why.
+\end{quote}
+
+The initial ideas revolved around attempts to match the linguist's skills to the content of the video to be subtitled. For example, some of the participants in the focus group possessed a degree in Law. Therefore, some argued that the model should prioritise them to complete tasks involving videos concerning Law. This proposal, however, did not reach a consensus. As other linguists argued, sometimes they prefer to work on contents that are not part of their official background:
+
+\begin{quote}
+     ``P\textsubscript{27}: [...] not working only on what we are already specialised in, but having the chance to learn something new. Sometimes that's  even the main motivation: entering a new field, uh, learning a new subject, dealing with a completely different area, different worlds. Like we come from from (sic) Law. And we are working as linguists precisely because we didn't like Law that much (laugh).
+     
+     P\textsubscript{30}: [...] I think not only [the] backgrounds of the translators should be considered, but also [their] interests. You know, people have hobbies, people like some sort of movies and [some] kinds of stuff more than others. So I think we should also be considering not only like, you know, university backgrounds, but also personal interests.''
+\end{quote}
+ 
+As with the case of the reputation-based models discussed in subsection \ref{subsec:reputation-model}, we concluded specific focus groups would be required in order to explore the details of this model. Nevertheless, an initial consensus emerged about considering the contents of previous tasks as a possible avenue to explore and implement this type of model:
+
+\begin{quote}
+     ``P\textsubscript{27}: [...] we could define this background and this specialisation of interests based on the most recent work [...] their most recent work in the previous weeks or the previous months [...]
+     
+     P\textsubscript{25}: [...] maybe considering also the size [...] like the five last big videos that the person has worked with would define their, (sic) their interests or their, (sic) [areas of] specialisation.''
+\end{quote}
+
+The session concluded by discussing logics which could, therefore, be potentially merged with those from reputation-based models, in which the complexity and the size of the task would also be considered when carrying out this content-based assignation, as the excerpt below including an intervention by P\textsubscript{26} depicts:
+
+\begin{quote}
+    ``[...] I think that may be one way to do that. Eh, like new people would get more priority on smaller jobs, and then people with more experience get priority with larger jobs. And then people, as they get experience, they start working on longer videos. [...] we know that if a person has had little experience before, then [it] is a bit complicated. So maybe the way would be prioritising smaller videos to newcomers, so everybody would have a chance to improve and to learn.''
+\end{quote}
+
+As with the previous cases, content-based models have the potential to be helpful in overcoming some of the problems for workers derived from the predominant FCFS logic, as those described in Section \ref{subsec:fcfs}. The three identified models presented in this section are, however, to be understood as ideal types \cite{weber1904objektivitat}. These models are not necessarily a description of reality as such, but valuable concepts when employed as methodological tools to systematise and consider facts that enable us to analyse and intervene within this specific social context. Therefore, identifying these models provides us with a helpful starting point to structure and guide our research, enabling the possibility of establishing comparisons between them and identifying specific characteristics that facilitate merging features of one model with the characteristics of another. Next, we discuss our results concerning the previous literature in the area and provide an overview of future avenues for research with the models mentioned above.
